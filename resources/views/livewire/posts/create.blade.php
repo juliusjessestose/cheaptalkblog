@@ -1,10 +1,9 @@
 <div>
-    {{-- The whole world belongs to you. --}}
     <div id="create-post-box" class="card">
         <div class="card-header">
             <h3 class="text-center">What's on your mind?</h3>
         </div>
-        <div class="card-body">
+        <div class="card-body card-body-daylight">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" wire:model.defer="title">
                 <label for="title">Author</label>
@@ -28,7 +27,8 @@
 
             </div>
             <div class="form-floating mb-3">
-                <input id="content-input" type="text" class="form-control" wire:model.defer="content">
+                <!-- <input id="content-input" type="text" class="form-control" wire:model.defer="content"> -->
+                <textarea class="form-control" type="text" name="post" style="width:100%" id="exampleFormControlTextarea1" rows="3" wire:model.defer="content"></textarea>
                 <label for="content">Content</label>
                 @error('content')
                     <p class="text-danger">{{ $message }}</p>
@@ -48,12 +48,16 @@
         }
 
         .card-header{
-            background-color: #1A1B41;
+            background-color: #1A1B41; 
             color: #BAFF29;
         }
-        a{
+        /* a{
             color: #BAFF29;
             margin-right: 8px;
+        } */
+        #lover{
+            background-color: #082032;
+            color: #FF4C29;
         }
 
         .btn{
@@ -62,7 +66,7 @@
         }
 
         .card{
-            width: 500px;
+            width: 650px;
         }
     
     </style>

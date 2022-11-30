@@ -5,7 +5,7 @@
 
    
 
-    <div class="container d-flex">
+    <div class="container">
         <div class="row d-flex flex-row-reverse">
             
             <button id="create-post-collapsible" type="button" class="mt-4 text-center collapsible">Create Post </button>
@@ -44,13 +44,13 @@
     }
 
     #top{
-        margin-top: 30px;
+        margin-top: 15px;
     }
     #top-title{
-        margin-top: 30px;
+        margin-top: 15px;
     }
     body{
-        background-color: rgb(251, 234, 251);
+        background-color: #E0E4D6;
     }
 
     h4, p{
@@ -59,7 +59,7 @@
     }
 
     #timestamp{
-        font-size: 10px;
+        font-size: 15px;
         
     }
 
@@ -68,7 +68,7 @@
     }
 
     #create-post-collapsible{
-        background-color: #1A1B41;
+        background-color: #4145E7;
         color: white;
         border-radius: 10px;
         max-width: 8vw;
