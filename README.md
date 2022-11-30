@@ -1,1 +1,2 @@
 
+ambot na mao bani
